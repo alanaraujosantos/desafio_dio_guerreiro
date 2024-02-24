@@ -1,0 +1,32 @@
+class Hero:
+    def __init__(self, nome, idade, tipo):
+        self.nome = nome
+        self.idade = idade
+        self.tipo = tipo
+
+    def atacar(self):
+        ataque = ""
+        if self.tipo == "mago":
+            ataque = "usou magia"
+        elif self.tipo == "guerreiro":
+            ataque = "usou espada"
+        elif self.tipo == "monge":
+            ataque = "usou artes marciais"
+        elif self.tipo == "ninja":
+            ataque = "usou shuriken"
+        
+        print(f"O {self.tipo} atacou usando {ataque}")
+
+
+# Exemplo de uso
+heroi1 = Hero("Gandalf", 1000, "mago")
+heroi1.atacar()
+
+heroi2 = Hero("Conan", 35, "guerreiro")
+heroi2.atacar()
+
+heroi3 = Hero("Bruce Lee", 32, "monge")
+heroi3.atacar()
+
+heroi4 = Hero("Hattori Hanzo", 40, "ninja")
+heroi4.atacar()
